@@ -1,0 +1,29 @@
+/* app/static/css/particles.css */
+
+#particles-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Пропускаем клики сквозь контейнер */
+    z-index: -1; /* Помещаем позади всего контента */
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    top: -50px;
+    color: var(--accent-color); /* Используем цвет акцента или текста */
+    font-family: monospace; /* Для красивых звездочек */
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-50px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+    }
+}

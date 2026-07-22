@@ -3,7 +3,91 @@
 {% block title %}Главная | Мое портфолио{% endblock %}
 
 {% block content %}
-    <h1>Привет, я Python-разработчик!</h1>
-    <p>Это мой личный сайт-портфолио, написанный на FastAPI.</p>
-    <p>Здесь я буду выкладывать свои проекты и делиться опытом.</p>
+<div class="bento-grid">
+    <div class="bento-card large-card">
+        <div>
+            <span style="text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; opacity: 0.7;">Приветствие</span>
+            <br><br>
+            <h2>Привет, я Python-разработчик!</h2>
+            <br>
+            <p>Это мой личный сайт-портфолио, написанный на FastAPI.</p>
+        </div>
+        <a href="#" class="bento-link">Узнать больше ↗</a>
+    </div>
+
+    <div class="bento-card wide-card">
+        <div>
+            <span style="text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; opacity: 0.7;">Мои работы</span>
+            <br><br>
+            <h3>Мои проекты</h3>
+            <p>Здесь я выкладываю свои проекты и делюсь опытом.</p>
+        </div>
+        <a href="/projects" class="bento-link">Посмотреть портфолио ↗</a>
+    </div>
+
+    <div class="bento-card accent-purple">
+        <div>
+            <svg class="bento-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            </svg>
+            <br>
+            <span style="text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; opacity: 0.7;">История</span>
+            <br><br>
+            <h3>Обо мне</h3>
+        </div>
+    </div>
+
+    <div class="bento-card accent-lime">
+        <div>
+            <svg class="bento-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <br>
+            <span style="text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; opacity: 0.7;">Связь</span>
+            <br><br>
+            <h3>Контакты</h3>
+        </div>
+    </div>
+</div>
+
+<div class="projects-section">
+    <h2 class="section-title">Мои проекты</h2>
+    <div class="projects-grid">
+        <!-- Карточка проекта 1 -->
+        <div class="project-card">
+            <h3>Telegram Bot Assistant</h3>
+            <p>Умный помощник для автоматизации задач и быстрых ответов.</p>
+            <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Aiogram</span>
+                <span class="tech-tag">SQLite</span>
+            </div>
+            <a href="#" class="project-details-link">Подробнее ↗</a>
+        </div>
+        
+        <!-- Карточка проекта 2 -->
+        <div class="project-card">
+            <h3>Web Portfolio</h3>
+            <p>Сайт-портфолио с современным Bento Grid дизайном, темной и светлой темами.</p>
+            <div class="tech-stack">
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS Grid</span>
+            </div>
+            <a href="#" class="project-details-link">Подробнее ↗</a>
+        </div>
+
+        <!-- Карточка проекта 3 -->
+        <div class="project-card">
+            <h3>AI Analytics Tool</h3>
+            <p>Инструмент для анализа данных и визуализации результатов с помощью нейросетей.</p>
+            <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Gemini API</span>
+            </div>
+            <a href="#" class="project-details-link">Подробнее ↗</a>
+        </div>
+    </div>
+</div>
 {% endblock %}

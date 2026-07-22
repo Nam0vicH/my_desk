@@ -35,16 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             iconSun.style.display = 'block';
             iconMoon.style.display = 'none';
         }
-        
-        // Add a small rotation animation to the button
-        themeSwitch.style.transform = 'rotate(180deg)';
-        setTimeout(() => {
-            themeSwitch.style.transition = 'none';
-            themeSwitch.style.transform = 'rotate(0deg)';
-            setTimeout(() => {
-                themeSwitch.style.transition = 'all 0.3s ease';
-            }, 10);
-        }, 300);
+        // No rotation animation, just swap icons
     });
     
     // Simple tab highlighting based on current path

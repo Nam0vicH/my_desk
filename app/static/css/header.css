@@ -8,7 +8,7 @@
 }
 
 .header-container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -16,16 +16,30 @@
 }
 
 .nav-tabs {
-    flex-grow: 1;
-    text-align: center;
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
+/* Прямоугольные кнопки без скругления, как просили */
 .nav-tab {
-    color: var(--accent-color);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border: 1px solid var(--text-color);
     text-decoration: none;
-    margin: 0 15px;
+    padding: 10px 20px;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    border-radius: 0; /* Строго без скруглений */
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-tab:hover {
+    background-color: #d97757;
+    color: #ffffff;
+    border-color: #d97757;
 }
 
 /* Кнопка смены темы */
@@ -35,17 +49,25 @@
 }
 
 .theme-switch {
-    background: transparent;
-    border: none;
+    background-color: var(--bg-color);
+    border: 1px solid var(--text-color);
+    border-radius: 0; /* Строго без скруглений */
     cursor: pointer;
     color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 10px 15px;
+    transition: all 0.2s ease;
+}
+
+.theme-switch:hover {
+    background-color: #d97757;
+    color: #ffffff;
+    border-color: #d97757;
 }
 
 .icon {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
 }
