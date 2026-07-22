@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Сюда дочерние страницы смогут подставлять свой Title -->
+    <title>{% block title %}Моё портфолио{% endblock %}</title>
+
+    <!-- Подключаем наш CSS через функцию url_for от Jinja2 -->
+    <link rel="stylesheet" href="{{ url_for('static', path='css/base.css') }}">
+    <script src="{{ url_for('static', path='js/theme.js') }}"></script>
+</head>
+<body>
+
+    <!-- Шапка сайта (одна на все страницы) -->
+    {% include 'header.html' %}
+
+    <!-- Главный контент страницы -->
+    <main>
+        <!-- Этот блок (content) будет заменяться кодом из других файлов -->
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>

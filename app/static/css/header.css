@@ -1,0 +1,51 @@
+/* app/static/css/header.css */
+
+/* Шапка сайта */
+.main-header {
+    background-color: var(--nav-bg);
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.header-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-tabs {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-tab {
+    color: var(--accent-color);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Кнопка смены темы */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.theme-switch {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}

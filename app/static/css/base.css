@@ -1,0 +1,40 @@
+/* app/static/css/base.css */
+
+/* Задаем палитру сайта (оригинальные цвета) */
+:root {
+    --bg-color: #1f1f1e;       /* Тёмно-синий фон */
+    --text-color: #e0e0e0;     /* Светло-серый текст */
+    --accent-color: #ff79c6;   /* Яркий розовый для акцентов/ссылок */
+    --nav-bg: #282a36;         /* Цвет шапки сайта */
+}
+
+/* Светлая тема */
+[data-theme="light"] {
+    --bg-color: #f7f7f7;
+    --text-color: #2b2b2b;
+    --accent-color: #c94090;   /* Более тёмный розовый для контраста на светлом фоне */
+    --nav-bg: #e6e6e6;
+}
+
+/* Подключаем локальный шрифт */
+@font-face {
+    font-family: 'AnthropicSans-Text-Semibold';
+    src: url('../fonts/AnthropicSans-Text-Semibold.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'AnthropicSans-Text-Semibold', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}

@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моё портфолио</title>
-</head>
-<body>
-    <h1>Привет, мир!</h1>
-    <p>Моё портфолио на FastAPI успешно работает.</p>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Главная | Мое портфолио{% endblock %}
+
+{% block content %}
+    <h1>Привет, я Python-разработчик!</h1>
+    <p>Это мой личный сайт-портфолио, написанный на FastAPI.</p>
+    <p>Здесь я буду выкладывать свои проекты и делиться опытом.</p>
+{% endblock %}
